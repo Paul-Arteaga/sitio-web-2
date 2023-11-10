@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Registro</title>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form id="registroForm">
+                    <h2>Regístrate</h2>
+                    <div class="inputbox">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" id="nombre" required>
+                        <label for="nombre"><strong>Nombre de usuario</strong></label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" id="correo" required>
+                        <label for="correo"><strong>Correo electrónico</strong></label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="contrasena" required>
+                        <label for="contrasena"><strong>Contraseña</strong></label>
+                    </div>
+                    <button type="button" onclick="registrar()">Registrarse</button>
+                    <div class="register">
+                        <p>¿Ya tienes una cuenta? <a href="index.html" style="text-decoration: underline;">Inicia sesión</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="registro.js"></script>
+    <!-- <script>
+        function registrar() {
+            // Puedes agregar lógica de registro aquí
+            alert("Registro exitoso");
+        }
+    </script> -->
+</body>
+</html>
